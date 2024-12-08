@@ -1,0 +1,67 @@
+# Cursor Rules for QuantX Project
+
+# Project Context
+This is a cryptocurrency quantitative trading system built on the Jesse framework.
+The project focuses on developing and implementing efficient and scalable trading strategies for the crypto market.
+All code should follow best practices for financial applications with emphasis on reliability and risk management.
+
+# Code Style
+- Follow PEP 8 style guide for Python code
+- Use type hints for all function parameters and return values
+- Add docstrings to all classes and methods using Google style
+- Maximum line length: 100 characters
+- Use 4 spaces for indentation
+
+# Naming Conventions
+- Class names: PascalCase (e.g., SimpleMovingAverage)
+- Function/method names: snake_case (e.g., calculate_rsi)
+- Variables: snake_case (e.g., closing_prices)
+- Constants: UPPER_CASE (e.g., MAX_LEVERAGE)
+- Strategy classes should end with 'Strategy' (e.g., TrendFollowingStrategy)
+
+# File Organization
+- Strategy files should be in strategies/ directory
+- Each strategy should be in its own file
+- Utility functions should be in utils/ directory
+- Configuration files should be in config/ directory
+
+# Documentation Requirements
+- Each strategy class must include:
+  - Strategy description
+  - Required parameters
+  - Risk management rules
+  - Expected behavior in different market conditions
+- All trading functions must document:
+  - Entry/exit conditions
+  - Position sizing rules
+  - Risk management parameters
+
+# Code Structure
+- Strategies should inherit from jesse.strategies.Strategy
+- Keep strategies modular and single-responsibility
+- Implement proper error handling for API calls
+- Include logging for important trading events
+
+# Testing
+- All strategies must have unit tests
+- Include backtesting results in strategy documentation
+- Test edge cases and error conditions
+- Validate risk management rules
+
+# Security
+- Never commit API keys or sensitive data
+- Use environment variables for credentials
+- Implement proper error handling for API failures
+- Validate all input data before processing
+
+# Performance
+- Optimize calculations for time-critical operations
+- Cache frequently used data when possible
+- Minimize API calls in live trading
+- Profile code for potential bottlenecks
+
+# Risk Management
+- Always implement position sizing rules
+- Include stop-loss mechanisms
+- Monitor and log risk metrics
+- Implement circuit breakers for extreme conditions

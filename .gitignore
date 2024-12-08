@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+.env
+.venv
+venv/
+ENV/
+
+# Conda
+.conda/
+
+# Jesse
+storage/temp/*
+storage/logs/*
+
+# Notebooks
+.ipynb_checkpoints
+
+# IDE
+.idea/
+.vscode/
+
+# Secrets
+*.key
+config/live-config.py
